@@ -1,6 +1,6 @@
 To initialize:
 
 ```shell
-git clone repo .dotfiles
+git clone git@github.com:gparrello/dotfiles.git .dotfiles
 sh .dotfiles/install
 ```
