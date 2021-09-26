@@ -1,7 +1,9 @@
 - clean: ['~']
 
 - link:
-    ~/.zshrc: zshrc
+    #~/.gitconfig:
+    ~/.zshrc:
     ~/.password-store: pass
 
-
+- shell:
+    - git submodule sync --recursive
