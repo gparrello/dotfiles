@@ -2,5 +2,6 @@
 
 - link:
     ~/.zshrc: zshrc
+    ~/.password-store: pass
 
 
