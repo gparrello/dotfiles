@@ -4,4 +4,4 @@
 	ignore = dirty
 [submodule "pass"]
 	path = pass
-	url = git@github.com:gparrello/pass.git
+	url = https://github.com/gparrello/pass.git
