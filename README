@@ -1,0 +1,5 @@
+To initialize
+```
+git clone repo .dotfiles
+sh .dotfiles/install
+```
