@@ -2,6 +2,9 @@ To initialize:
 ```
 wget http://setup.gparrello.com -O - | sh
 ```
+# TODO: DNS not working
+# TODO: HTTP redirection not working
+
 or
 ```shell
 cd $HOME
