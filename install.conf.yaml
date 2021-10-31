@@ -7,7 +7,7 @@
       description: Installing packages
       stderr: true
     -
-      command: ls commands | xargs sh
+      command: find commands -print0 | xargs -0r sh
       description: Executing all commands
       stderr: true
 
