@@ -21,5 +21,5 @@
       force: true
     ~/.password-store: pass
     ~/.oh-my-zsh/custom:
-      path: oh-my-zsh_custom
+      path: oh-my-zsh
       force: true
