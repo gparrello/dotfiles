@@ -1,15 +1,15 @@
 - clean: ['~']
 
-- link:
-    #~/.gitconfig:
-    ~/.zshrc:
-    ~/.password-store: pass
-
 - shell:
-    - [git submodule sync --recursive, Update submodules]
-    - [sudo apt get install zsh, Install ZSH]
+    - [git submodule sync --recursive, Installing submodules]
+    - [sudo apt get install zsh, Installing ZSH]
     -
       command: sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
       stdout: true
       stderr: true
       description: install Oh My Zsh
+
+- link:
+    #~/.gitconfig:
+    ~/.zshrc:
+    ~/.password-store: pass
