@@ -5,13 +5,9 @@
     -
       command: xargs -a apt-packages sudo apt install -y
       description: Installing packages
-      stderr: true
-      stdout: true
     -
       command: find scripts -iname "*.sh" -print0 | xargs -0r sh
       description: Executing commands
-      stderr: true
-      stdout: true
 
 - link:
     #~/.gitconfig:
@@ -19,4 +15,6 @@
       path: zshrc
       force: true
     ~/.password-store: pass
-    ~/.oh-my-zsh/custom: oh-my-zsh_custom
+    ~/.oh-my-zsh/custom:
+      path: oh-my-zsh_custom
+      force: true
