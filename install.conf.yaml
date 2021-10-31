@@ -8,7 +8,7 @@
       stderr: true
       stdout: true
     -
-      command: find scripts -print0 | xargs -0r sh
+      command: find scripts -iname "*.sh" -print0 | xargs -0r sh
       description: Executing commands
       stderr: true
       stdout: true
