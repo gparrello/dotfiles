@@ -3,7 +3,7 @@
 - shell:
     - [git submodule sync --recursive, Installing submodules]
     -
-      command: sudo apt install "$(cat apt-packages)" -y
+      command: xargs -a apt-packages sudo apt install -y
       description: Installing packages
       stderr: true
       stdout: true
