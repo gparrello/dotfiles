@@ -5,9 +5,13 @@
     -
       command: xargs -a apt-packages sudo apt install -y
       description: Installing packages
+      stderr: true
+      stdout: true
     -
       command: find scripts -print0 | xargs -0r sh
       description: Executing commands
+      stderr: true
+      stdout: true
 
 - link:
     #~/.gitconfig:
