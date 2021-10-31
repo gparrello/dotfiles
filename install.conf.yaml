@@ -3,15 +3,9 @@
 - shell:
     - [git submodule sync --recursive, Installing submodules]
     - [sudo apt install zsh, Installing ZSH]
+    - [sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)", Installing OhMyZsh]
 
 - link:
     #~/.gitconfig:
     ~/.zshrc:
     ~/.password-store: pass
-
-- shell:
-    -
-      command: sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
-      stdout: true
-      stderr: true
-      description: install Oh My Zsh
