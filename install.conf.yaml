@@ -2,7 +2,7 @@
 
 - shell:
     - [git submodule sync --recursive, Installing submodules]
-    - [sudo apt install "$(cat apt-packages)", Installing packages]
+    - [sudo apt install "$(cat apt-packages)" -y, Installing packages]
     - [sh -c "$(wget -nv -O - https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)", Installing OhMyZsh]
     - [sudo sh -c "$(wget -nv -O - "https://download.calibre-ebook.com/linux-installer.sh")", Installing Calibre]
 
