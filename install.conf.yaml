@@ -8,4 +8,5 @@
 - link:
     #~/.gitconfig:
     ~/.zshrc:
+      force: true
     ~/.password-store: pass
