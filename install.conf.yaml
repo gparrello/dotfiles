@@ -8,7 +8,11 @@
     -
       command: find scripts -iname "*.sh" -print0 | xargs -0r sh
       description: Executing commands
-    - [chsh -s $(which zsh), Making zsh the default shell]
+    -
+      command: chsh -s $(which zsh)
+      description: Making zsh the default shell
+      stderr: true
+      sdtout: true
 
 - link:
     #~/.gitconfig:
