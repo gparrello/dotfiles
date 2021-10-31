@@ -11,9 +11,6 @@
       description: Executing all commands
       stderr: true
 
-    - [sh -c "$(wget -nv -O - https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)", Installing OhMyZsh]
-    - [sudo sh -c "$(wget -nv -O - "https://download.calibre-ebook.com/linux-installer.sh")", Installing Calibre]
-
 - link:
     #~/.gitconfig:
     ~/.zshrc:
