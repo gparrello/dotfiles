@@ -7,5 +7,8 @@
 
 - shell:
     - [git submodule sync --recursive, Update submodules]
-    - [sh $HOME/.dotfiles/installers/ohmyzsh.sh, Install Oh-My-Zsh]
-
+    -
+      command: sh <(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)
+      stdout: true
+      stderr: true
+      description: install Oh My Zsh
