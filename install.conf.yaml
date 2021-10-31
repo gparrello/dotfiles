@@ -4,7 +4,8 @@
     #~/.gitconfig:
     ~/.zshrc:
     ~/.password-store: pass
-    ~/.oh-my-zsh/custom: oh-my-zsh_custom
 
 - shell:
-    - git submodule sync --recursive
+    - [git submodule sync --recursive, Update submodules]
+    - [sh $HOME/.dotfiles/installers/ohmyzsh.sh, Install Oh-My-Zsh]
+
