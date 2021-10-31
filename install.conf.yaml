@@ -2,7 +2,7 @@
 
 - shell:
     - [git submodule sync --recursive, Installing submodules]
-    - [sudo apt get install zsh, Installing ZSH]
+    - [sudo apt install zsh, Installing ZSH]
 
 - link:
     #~/.gitconfig:
