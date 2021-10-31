@@ -1,1 +1,4 @@
-sudo apt-get install rename
+sudo apt-get install \
+rename\
+xclip\
+copyq
