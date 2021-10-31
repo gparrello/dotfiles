@@ -9,7 +9,7 @@
       command: find scripts -iname "*.sh" -print0 | xargs -0r sh
       description: Executing commands
     -
-      command: chsh -s $(which zsh)
+      command: usermod -s $(which zsh) $USER
       description: Making zsh the default shell
       stderr: true
       sdtout: true
