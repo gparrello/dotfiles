@@ -2,9 +2,6 @@
 	path = dotbot
 	url = https://github.com/anishathalye/dotbot
 	ignore = dirty
-[submodule "pass"]
-	path = pass
-	url = https://github.com/gparrello/pass
 [submodule "oh-my-zsh_custom/plugins/fzf-zsh-plugin"]
 	path = oh-my-zsh/plugins/fzf-zsh-plugin
 	url = git@github.com:unixorn/fzf-zsh-plugin.git
