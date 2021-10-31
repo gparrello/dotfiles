@@ -2,7 +2,7 @@
 
 - shell:
     - [git submodule sync --recursive, Installing submodules]
-    - [sudo apt install zsh, Installing ZSH]
+    - [sudo apt install "$(cat apt-packages)", Installing packages]
     - [sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)", Installing OhMyZsh]
 
 - link:
