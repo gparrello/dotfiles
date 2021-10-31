@@ -6,7 +6,6 @@
       command: xargs -a apt-packages sudo apt install -y
       description: Installing packages
       stderr: true
-      stdout: true
     -
       command: ls commands | xargs sh
       description: Executing all commands
