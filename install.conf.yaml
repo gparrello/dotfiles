@@ -10,7 +10,6 @@
       command: xargs -n 1 -a packages/snap_classic sudo snap install --classic
       description: Installing packages
       stderr: true
-      stdout: true
     -
       command: find scripts -iname "*.sh" -print0 | xargs -0r sh
       description: Executing commands
