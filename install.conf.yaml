@@ -7,10 +7,6 @@
       description: Executing commands
       stderr: true
     -
-      command: sudo usermod -s $(which zsh) $USER
-      description: Making zsh the default shell
-      stderr: true
-    -
       command: xargs -a packages/apt sudo apt install -y
       description: Installing packages
       stderr: true
