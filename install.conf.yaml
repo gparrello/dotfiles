@@ -4,15 +4,15 @@
     - [git submodule sync --recursive, Installing submodules]
     -
       command: find scripts -iname "*.sh" -print0 | xargs -0r sh
-      description: Executing commands
+      description: Executing scripts
       stderr: true
     -
       command: xargs -a packages/apt sudo apt install -y
-      description: Installing packages
+      description: Installing apt packages
       stderr: true
     -
       command: xargs -n 1 -a packages/snap sudo snap install --classic
-      description: Installing packages
+      description: Installing snap packages
       stderr: true
 
 - link:
