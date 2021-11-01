@@ -79,6 +79,7 @@ plugins=(
   #thefuck
   git
   git-auto-fetch
+  kubectl
   ubuntu
   pass
   nmap
