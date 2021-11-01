@@ -1,1 +1,3 @@
-curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64 | sudo install - /usr/local/bin/minikube
+OUTPUT_FILE=/tmp/minikube.install
+wget -nv https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64 -O $OUTPUT_FILE
+sudo install $OUTPUT_FILE /usr/local/bin/minikube
