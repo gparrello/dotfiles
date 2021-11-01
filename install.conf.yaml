@@ -3,9 +3,14 @@
 - shell:
     - [git submodule sync --recursive, Installing submodules]
     -
-      command: xargs -a apt-packages sudo apt install -y
+      command: xargs -a packages/apt sudo apt install -y
       description: Installing packages
       stderr: true
+    -
+      command: xargs -a packages/snap_classic sudo snap --classic
+      description: Installing packages
+      stderr: true
+      stdout: true
     -
       command: find scripts -iname "*.sh" -print0 | xargs -0r sh
       description: Executing commands
