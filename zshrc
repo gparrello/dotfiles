@@ -81,7 +81,7 @@ plugins=(
   git-auto-fetch
   kubectl
   ubuntu
-  pass
+  #pass
   nmap
   docker
   history
