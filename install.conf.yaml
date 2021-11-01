@@ -3,20 +3,20 @@
 - shell:
     - [git submodule sync --recursive, Installing submodules]
     -
-      command: xargs -a packages/apt sudo apt install -y
-      description: Installing packages
-      stderr: true
-    -
-      command: xargs -n 1 -a packages/snap sudo snap install --classic
-      description: Installing packages
-      stderr: true
-    -
       command: find scripts -iname "*.sh" -print0 | xargs -0r sh
       description: Executing commands
       stderr: true
     -
       command: sudo usermod -s $(which zsh) $USER
       description: Making zsh the default shell
+      stderr: true
+    -
+      command: xargs -a packages/apt sudo apt install -y
+      description: Installing packages
+      stderr: true
+    -
+      command: xargs -n 1 -a packages/snap sudo snap install --classic
+      description: Installing packages
       stderr: true
 
 - link:
