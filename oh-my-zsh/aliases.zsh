@@ -11,5 +11,3 @@ alias ¡="watch "
 
 alias cat="batcat"
 alias minecraft="java -jar $HOME/.minecraft/launcher.jar" # &> /dev/null &"
-
-alias kubectl="minikube kubectl --"
