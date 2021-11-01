@@ -6,6 +6,7 @@
       command: find scripts -iname "*.sh" -print0 | xargs -0r sh
       description: Executing scripts
       stderr: true
+      stdout: true
     -
       command: xargs -a packages/apt sudo apt install -y
       description: Installing apt packages
