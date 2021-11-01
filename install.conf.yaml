@@ -7,7 +7,7 @@
       description: Installing packages
       stderr: true
     -
-      command: xargs -a packages/snap_classic sudo snap --classic
+      command: xargs -a packages/snap_classic sudo snap install --classic
       description: Installing packages
       stderr: true
       stdout: true
