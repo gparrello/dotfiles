@@ -12,4 +12,10 @@ sudo apt update && sudo apt install -y kubectl
 kubectl completion zsh > "$HOME/.dotfiles/oh-my-zsh/kubectl.zsh"
 
 # k9s
-wget -O - https://github.com/derailed/k9s/releases/download/v0.24.15/k9s_Linux_x86_64.tar.gz | tar xvzf k9s -C ../bin/
+#wget -O - https://github.com/derailed/k9s/releases/download/v0.24.15/k9s_Linux_x86_64.tar.gz | tar xvzf k9s -C ../bin/
+# TODO: move or link to .local/bin in home
+
+# kpoof
+#wget -O https://raw.githubusercontent.com/farmotive/kpoof/master/kpoof
+#chmod +x kpoof
+# TODO: move or link to .local/bin in home
