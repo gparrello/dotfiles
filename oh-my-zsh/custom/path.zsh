@@ -2,3 +2,7 @@
 if [ -d "$HOME/.local/bin" ] ; then
     PATH="$HOME/.local/bin:$PATH"
 fi
+
+if [ -d "$HOME/.tfenv/bin" ] ; then
+    PATH="$HOME/.tfenv/bin:$PATH"
+fi
