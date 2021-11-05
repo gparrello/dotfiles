@@ -26,3 +26,4 @@
     ~/.oh-my-zsh/custom:
       path: oh-my-zsh
       force: true
+    ~/.local/bin: bin

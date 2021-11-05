@@ -14,3 +14,6 @@
 [submodule "pass"]
 	path = pass
 	url = git@github.com:gparrello/pass.git
+[submodule "apps/kubectx"]
+	path = apps/kubectx
+	url = https://github.com/ahmetb/kubectx
