@@ -1,0 +1,1 @@
+../../apps/kubectx/completion/_kubens.zsh
