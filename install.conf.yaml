@@ -23,7 +23,7 @@
       path: zshrc
       force: true
     ~/.password-store: pass
-    ~/.oh-my-zsh/*:
+    ~/.oh-my-zsh/:
       path: oh-my-zsh/*
       force: true
       glob: true
