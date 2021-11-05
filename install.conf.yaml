@@ -23,11 +23,8 @@
       path: zshrc
       force: true
     ~/.password-store: pass
-    ~/.oh-my-zsh/custom:
-      path: oh-my-zsh/custom
-      force: true
-    ~/.oh-my-zsh/completions:
-      path: oh-my-zsh/completions
+    ~/.oh-my-zsh/*:
+      path: oh-my-zsh/
       force: true
     ~/.local/bin:
       path: bin
