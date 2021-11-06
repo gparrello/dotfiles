@@ -1,21 +1,36 @@
 name: CI
+
 on:
   push:
-    branches:
-      - master
+    branches: [ master ]
   pull_request:
-    branches:
-      - master
+    branches: [ master ]
+
 jobs:
-  build:
+  build-commands:
+    name: Build Commands
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+
+      - name: Build commands
       - run: mkdir -p ~/dotfiles-install-dir && HOME=~/dotfiles-install-dir ./install --only shell
-        name: Build commands
+
+  build-links:
+    name: Build Links
+    runs-on: ubuntu-latest
+    steps:
       - uses: actions/checkout@v2
-      - run: mkdir -p ~/dotfiles-install-dir && HOME=~/dotfiles-install-dir ./install --only links
-        name: Build links
+
+      - name: Build links
+        run: mkdir -p ~/dotfiles-install-dir && HOME=~/dotfiles-install-dir ./install --only links
+
+  build-all:
+    name: Build all
+    needs: [ build-commands, build-links ]
+    runs-on ubuntu-latest
+    steps:
       - uses: actions/checkout@v2
-      - run: mkdir -p ~/dotfiles-install-dir && HOME=~/dotfiles-install-dir ./install
-        name: Build all
+
+      - name: Build all
+        run: mkdir -p ~/dotfiles-install-dir && HOME=~/dotfiles-install-dir ./install
