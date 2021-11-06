@@ -15,7 +15,6 @@
       command: find scripts -iname "*.sh" -print0 | xargs -n 1 -0r sh
       description: Executing scripts
       stderr: true
-      stdout: true
 
 - link:
     #~/.gitconfig:
