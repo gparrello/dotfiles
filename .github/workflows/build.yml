@@ -7,5 +7,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+      - run: mkdir -p ~/dotfiles-install-dir && HOME=~/dotfiles-install-dir ./install --only shell
+        name: Build commands
+      - uses: actions/checkout@v2
+      - run: mkdir -p ~/dotfiles-install-dir && HOME=~/dotfiles-install-dir ./install --only links
+        name: Build
+      - uses: actions/checkout@v2
       - run: mkdir -p ~/dotfiles-install-dir && HOME=~/dotfiles-install-dir ./install
         name: Build
