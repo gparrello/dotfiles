@@ -27,6 +27,3 @@
       path: oh-my-zsh/*
       force: true
       glob: true
-    ~/.local/bin:
-      path: bin
-      force: true
