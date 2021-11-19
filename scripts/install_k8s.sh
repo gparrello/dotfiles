@@ -4,12 +4,13 @@ wget -nv https://storage.googleapis.com/minikube/releases/latest/minikube-linux-
 sudo install $OUTPUT_FILE /usr/local/bin/minikube
 
 # kubectl
+SCRIPTPATH="$( cd -- "$(dirname "$0")" >/dev/null 2>&1 ; pwd -P )"
 sudo apt update && sudo apt install -y apt-transport-https ca-certificates curl
 sudo curl -fsSLo /usr/share/keyrings/kubernetes-archive-keyring.gpg https://packages.cloud.google.com/apt/doc/apt-key.gpg
 echo "deb [signed-by=/usr/share/keyrings/kubernetes-archive-keyring.gpg] https://apt.kubernetes.io/ kubernetes-xenial main"\
   | sudo tee /etc/apt/sources.list.d/kubernetes.list
 sudo apt update && sudo apt install -y kubectl
-kubectl completion zsh > "$HOME/.dotfiles/oh-my-zsh/kubectl.zsh"
+kubectl completion zsh > "$SCRIPTPATH/../oh-my-zsh/custom/kubectl.zsh"
 
 # k9s
 #wget -O - https://github.com/derailed/k9s/releases/download/v0.24.15/k9s_Linux_x86_64.tar.gz | tar xvzf k9s -C ../bin/
