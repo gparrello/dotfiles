@@ -24,3 +24,4 @@
     ~/.password-store: pass
     ~/.oh-my-zsh/completions:
       path: oh-my-zsh/completions
+    ~/.nanorc: nanorc
